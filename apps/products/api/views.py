@@ -5,8 +5,11 @@ from rest_framework.permissions import IsAuthenticated
 from apps.products.api.permissions import Permiso
 
 class ProductViewset(ModelViewSet):
+    permission_classes = [Permiso]
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
+    http_method_names = ['get','post','put']
+
 
 
 
