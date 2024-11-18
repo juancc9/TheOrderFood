@@ -10,4 +10,4 @@ class ProductSerializer(ModelSerializer):
 class OrdenSerializer(ModelSerializer):
     class Meta:
         model = Orden
-        fields = '__all__'
+        fields = '__all__' 
